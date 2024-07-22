@@ -1,0 +1,4 @@
+// module.exports.authController = require('./auth.controller');
+module.exports.userController = require('./user.controller');
+module.exports.userController = require('./login.controller');
+module.exports.NewsController = require('./cms/news'); 
