@@ -15,41 +15,8 @@ global.uuid1 = uuidUtils.uuid1;
 
 const cors = require('cors');
 
-// const sequelize = require('./config/database');
-// const User = require('./models/user');
 const responseInterceptor = require('./middlewares/responseInterceptor');
 const app = express();
-
-
-// 测试数据库连接
-// sequelize.authenticate()
-//   .then(() => {
-//     console.log('Connection has been established successfully.');
-
-//     // 同步所有模型
-//     return sequelize.sync();
-//   })
-//   .then(() => {
-//     console.log('All models were synchronized successfully.');
-
-//     // 创建一个新的用户
-//     // return User.create({
-//     //   username: 'johndoe1',
-//     //   password: 'securepassword'
-//     // });
-//   })
-//   .then(user => {
-//     console.log(`User created: ${user.username}`);
-
-//     // 查询所有用户
-//     return User.findAll();
-//   })
-//   .then(users => {
-//     console.log('All users:', users);
-//   })
-//   .catch(err => {
-//     console.error('Unable to connect to the database:', err);
-//   });
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
