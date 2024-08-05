@@ -47,7 +47,7 @@ Role.init({ //用于初始化模型的属性和选项。
     },
 }, {
     sequelize,  //指定连接的数据库实例
-    modelName: 'role',  //模型的名称
+    modelName: 'Role',  //模型的名称
     tableName: 'org_role' // 指定关联的数据库表名称
 });
 
